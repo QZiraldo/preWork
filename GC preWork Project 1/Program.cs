@@ -6,16 +6,16 @@ namespace GC_preWork_Project_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter a number to reverse");
-            int Number = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter a number to be reversed");
+            int NumX = int.Parse(Console.ReadLine());
             int Reverse = 0;
-            while (Number > 0)
+            while (NumX > 0)
             {
-                int remainder = Number % 10;
+                int remainder = NumX % 10;
                 Reverse = (Reverse * 10) + remainder;
-                Number = Number / 10;
+                NumX = NumX / 10;
             }
-            Console.WriteLine("Reverse No. is {0}", Reverse);
+            Console.WriteLine("Reversed number is {0}", Reverse);
             Console.ReadLine();
         }
     }
